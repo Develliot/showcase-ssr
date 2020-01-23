@@ -4,7 +4,7 @@ import React, {
     Dispatch,
     SetStateAction,
 } from 'react';
-import { UserType } from 'src/pages/usingApis';
+import { UserType } from 'src/pages/usingAPIs';
 
 export type UserContextStateType = {
     users: UserType[] | null;

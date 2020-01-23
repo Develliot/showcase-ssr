@@ -9,7 +9,7 @@ import { Carousel } from 'src/components/Carousel';
 import { ErrorMessage } from 'src/components/ErrorMessage';
 
 // types
-import { UserType } from 'src/pages/usingApis';
+import { UserType } from 'src/pages/usingAPIs';
 
 const chooseColor = (index: number): string => {
     const availableColours = [

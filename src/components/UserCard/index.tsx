@@ -3,7 +3,7 @@ import React from 'react';
 import { H3, Span, Paragraph } from 'src/components/Typography';
 import { VerticalSpacer, RowCenter } from 'src/components/Layout';
 
-import { UserType } from 'src/pages/usingApis';
+import { UserType } from 'src/pages/usingAPIs';
 
 import {
     UserCardWrapper,
