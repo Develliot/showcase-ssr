@@ -95,13 +95,16 @@ export const UsingAPIs: NextPage<Props> = ({ isError, isLoading, users }) => {
                         <H3>Data strategy</H3>
                         <VerticalSpacer size='medium' />
                         <Paragraph>
-                            With Next JS the getInitialProps method which deal
-                            with data on SSR needs to happen on a page an not
-                            This was so components so I couldn't use a reusable
-                            hook to load data. I did however push that data to a
-                            context using a hook when the page renders. This is
-                            fine because the component that uses this data to
-                            make another api call will work in the client only
+                            With Next JS the getInitialProps method injects data
+                            into page props for both SSR and the client. This
+                            can only happen on the page level and not the
+                            component level. For this reason I couldn't use a
+                            reusable hook to load data as this happens
+                            effectively outside the component. I did however
+                            push that data to a context using a hook when the
+                            page renders. This is OK for this page because the
+                            map component that uses this data makes another api
+                            call which works only within the client
                         </Paragraph>
                         <VerticalSpacer size='small' />
                         <Paragraph>
@@ -111,16 +114,6 @@ export const UsingAPIs: NextPage<Props> = ({ isError, isLoading, users }) => {
                             range to a UK range so point marks don't end up in
                             weird places. The maps are from google maps
                             Javascript API.
-                        </Paragraph>
-                        <VerticalSpacer size='large' />
-                        <H3>Separating the data and display</H3>
-                        <VerticalSpacer size='medium' />
-                        <Paragraph>
-                            The request itself is triggered by the
-                            UsersContainer. The containers job is to perform the
-                            request via the hook and pump data into a
-                            userContext or pass error and loading states
-                            directly to the visible component.
                         </Paragraph>
                         <VerticalSpacer size='large' />
                         <H3>Context API</H3>
