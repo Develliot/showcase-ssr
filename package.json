@@ -1,12 +1,12 @@
 {
-    "name": "ssr-showcase",
+    "name": "showcase-ssr",
     "version": "1.0.0",
     "description": "Showcase SSR webpage ",
     "main": "index.js",
     "scripts": {
         "dev": "next",
         "build": "next build",
-        "start": "next start",
+        "start": "next start -p $PORT",
         "test": "jest",
         "test:watch": "jest — watch",
         "test:coverage": "jest — coverage"
