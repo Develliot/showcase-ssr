@@ -23,7 +23,7 @@ import {
     ColorLabelWrapper,
     ColorTileWrapper,
     FlexWrapRow,
-} from './styles';
+} from '../pageStyles/styles';
 
 const colorLabelList = Object.keys(colors);
 
