@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<styles__TextInputWrapper>
+  <styles__InputStyled
+    name="input"
+    placeholder=" "
+    required={false}
+    type="text"
+  />
+  <styles__LabelStyled>
+    some label text
+  </styles__LabelStyled>
+</styles__TextInputWrapper>
+`;

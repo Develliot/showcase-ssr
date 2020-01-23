@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with children 1`] = `
+<styles__ContentWrapperStyled
+  visible={true}
+>
+  <div>
+    Hello
+  </div>
+  <div>
+    World
+  </div>
+</styles__ContentWrapperStyled>
+`;

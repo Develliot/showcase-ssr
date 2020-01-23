@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<styles__UserCardWrapper>
+  <Layout__RowCenter>
+    <styles__LoadingCoverColor>
+      <Layout__RowCenter>
+        <styles__LoadingImageWrapper />
+      </Layout__RowCenter>
+    </styles__LoadingCoverColor>
+  </Layout__RowCenter>
+  <styles__BottomHalf>
+    <Layout__VerticalSpacer
+      size="small"
+    />
+    <styles__AnimatedRows>
+      <styles__LoadingH3 />
+    </styles__AnimatedRows>
+    <Layout__VerticalSpacer
+      size="medium"
+    />
+    <styles__AnimatedRows>
+      <styles__LoadingParagraph />
+      <styles__LoadingParagraph />
+      <styles__LoadingParagraph />
+      <styles__LoadingParagraph />
+      <styles__LoadingParagraph />
+    </styles__AnimatedRows>
+  </styles__BottomHalf>
+</styles__UserCardWrapper>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the correct selected dot 1`] = `
+<styles__DotContainer>
+  <styles__Dot
+    key="0"
+    onClick={[Function]}
+    selected={false}
+  />
+  <styles__Dot
+    key="1"
+    onClick={[Function]}
+    selected={false}
+  />
+  <styles__Dot
+    key="2"
+    onClick={[Function]}
+    selected={false}
+  />
+  <styles__Dot
+    key="3"
+    onClick={[Function]}
+    selected={true}
+  />
+</styles__DotContainer>
+`;

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with error 1`] = `
+<Fragment>
+  <ErrorMessage
+    errorMessage="Unable to retrieve user data"
+  />
+</Fragment>
+`;
+
+exports[`renders with loading 1`] = `
+<Fragment>
+  <Carousel>
+    <UserCardLoading />
+    <UserCardLoading />
+    <UserCardLoading />
+  </Carousel>
+</Fragment>
+`;
+
+exports[`renders with users 1`] = `
+<Fragment>
+  <Carousel
+    onPositionChanged={[Function]}
+  >
+    <UserCard
+      color="#A93F55"
+      key="1"
+      user={
+        Object {
+          "email": "angela.castro@example.com",
+          "location": Object {
+            "city": "Stevenage",
+            "coordinates": Object {
+              "latitude": 61.2773,
+              "longitude": 45.9598,
+            },
+            "postcode": "BD18 8JD",
+            "state": "Durham",
+            "street": Object {
+              "name": "Grove Road",
+              "number": "8267",
+            },
+          },
+          "login": Object {
+            "uuid": "1",
+          },
+          "name": Object {
+            "first": "Angela",
+            "last": "Castro",
+          },
+          "picture": Object {
+            "large": "https://randomuser.me/api/portraits/women/45.jpg",
+          },
+        }
+      }
+    />
+  </Carousel>
+</Fragment>
+`;

@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<styles__UserCardWrapper>
+  <Layout__RowCenter>
+    <styles__CoverColor
+      color="#A93F55"
+    >
+      <Layout__RowCenter>
+        <styles__ImageWrapper>
+          <styles__ImageContainer
+            alt="User image"
+            src="https://randomuser.me/api/portraits/women/45.jpg"
+          />
+        </styles__ImageWrapper>
+      </Layout__RowCenter>
+    </styles__CoverColor>
+  </Layout__RowCenter>
+  <styles__BottomHalf>
+    <Layout__VerticalSpacer
+      size="small"
+    />
+    <Typography__H3>
+      Angela
+       
+      Castro
+    </Typography__H3>
+    <Layout__VerticalSpacer
+      size="small"
+    />
+    <Typography__Paragraph
+      ellipsis={true}
+    >
+      <Typography__Span
+        bold={true}
+      >
+        Email: 
+      </Typography__Span>
+       
+      angela.castro@example.com
+    </Typography__Paragraph>
+    <Typography__Paragraph
+      ellipsis={true}
+    >
+      <Typography__Span
+        bold={true}
+      >
+        Street: 
+      </Typography__Span>
+       
+      <Typography__Span>
+        8267
+         
+        Grove Road
+      </Typography__Span>
+    </Typography__Paragraph>
+    <Typography__Paragraph
+      ellipsis={true}
+    >
+      <Typography__Span
+        bold={true}
+      >
+        City: 
+      </Typography__Span>
+       
+      Stevenage
+    </Typography__Paragraph>
+    <Typography__Paragraph
+      ellipsis={true}
+    >
+      <Typography__Span
+        bold={true}
+      >
+        State: 
+      </Typography__Span>
+       
+      Durham
+    </Typography__Paragraph>
+    <Typography__Paragraph
+      ellipsis={true}
+    >
+      <Typography__Span
+        bold={true}
+      >
+        Postcode: 
+      </Typography__Span>
+       
+      BD18 8JD
+    </Typography__Paragraph>
+  </styles__BottomHalf>
+</styles__UserCardWrapper>
+`;
