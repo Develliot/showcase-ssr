@@ -15,6 +15,13 @@
 
 # Next.js transient files
 node_modules/
+.next/cache
+
+# Other config and Files
+README.md
+.eslintignore
+.eslintrc
 
 # Next.js source code
 /src/
+

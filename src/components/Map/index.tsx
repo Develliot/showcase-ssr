@@ -37,7 +37,7 @@ export const Map = () => {
         <MapWrapper id='map'>
             <GoogleMapReact
                 bootstrapURLKeys={{
-                    key: 'AIzaSyCiVjDX7HFiFgzFxLrSz5LZAnBMzXl0CkU',
+                    key: 'AIzaSyDVo8UxjEajjGjTZdNFP2jxTjpalE0s_Uk',
                 }}
                 center={newCenter}
                 defaultZoom={7}
