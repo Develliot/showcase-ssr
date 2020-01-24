@@ -1,5 +1,9 @@
 ## Demo:
 
+https://showcase-ssr.appspot.com/
+
+Hosted on GAE
+
 ## Available Scripts
 
 In the project directory, you can run:
