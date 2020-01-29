@@ -24,6 +24,7 @@ exports[`renders the with a retry button 1`] = `
   />
   <Link
     href="/"
+    passHref={true}
   >
     <a>
       <Button
@@ -52,6 +53,7 @@ exports[`renders the with an error message 1`] = `
   />
   <Link
     href="/"
+    passHref={true}
   >
     <a>
       <Button

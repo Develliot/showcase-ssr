@@ -47,3 +47,7 @@ export const Links = styled.ul`
     list-style-type: none;
     justify-content: flex-start;
 `;
+
+export const LogoLink = styled.a`
+    text-decoration: none;
+`;

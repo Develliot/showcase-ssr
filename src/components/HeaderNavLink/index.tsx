@@ -15,8 +15,8 @@ export const HeaderNavLink = ({
 }) => {
     return (
         <HeaderLinkItem>
-            <Link href={to}>
-                <NavLinkStyled title={title}>
+            <Link href={to} passHref>
+                <NavLinkStyled title={title} tabIndex={0}>
                     <Paragraph color='white'>{title}</Paragraph>
                     <RowCenter>
                         <HoverInidcator selected={selected} />

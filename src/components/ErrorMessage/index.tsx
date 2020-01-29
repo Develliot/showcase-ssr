@@ -30,7 +30,7 @@ export const ErrorMessage: FunctionComponent<Props> = ({
                     <VerticalSpacer size='medium' />
                 </>
             ) : null}
-            <Link href={urls.home}>
+            <Link href={urls.home} passHref>
                 <a>
                     <Button color='darkGrey'>Home</Button>
                 </a>

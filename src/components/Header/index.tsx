@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 import { useScrollPosition } from 'src/hooks/useScrollPosition';
 import urls from 'src/urls';
 
 import { H2 } from 'src/components/Typography';
 import { VerticalSpacer } from 'src/components/Layout';
-import { HeaderWrapper, HeaderInner, Links } from './styles';
+import { HeaderWrapper, HeaderInner, Links, LogoLink } from './styles';
 
 import { HeaderNavLink } from 'src/components/HeaderNavLink';
 
@@ -22,8 +23,12 @@ export const Header = ({
     return (
         <HeaderWrapper visible={visible}>
             <HeaderInner>
-                <H2 color='white'>Showcase</H2>
-                <VerticalSpacer size='medium' />
+                <Link href={urls.home} passHref>
+                    <LogoLink title='link to home' tabIndex={0}>
+                        <H2 color='white'>Showcase</H2>
+                        <VerticalSpacer size='medium' />
+                    </LogoLink>
+                </Link>
                 <nav>
                     <Links>
                         <HeaderNavLink
