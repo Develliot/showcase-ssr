@@ -1,7 +1,6 @@
-import React, { useContext } from 'react';
 import GoogleMapReact, { Coords } from 'google-map-react';
 
-import { UserContext } from 'src/contexts/UserContext';
+import { useUserContext } from 'src/contexts/UserContext';
 
 import { MapWrapper, MarkerImage, MarkerWrapper } from './styles';
 
@@ -19,7 +18,7 @@ const Marker = (props: MarkerProps) => {
 };
 
 export const Map = () => {
-    const [state] = useContext(UserContext);
+    const [state] = useUserContext();
     if (!state || !state.users) {
         return null;
     }

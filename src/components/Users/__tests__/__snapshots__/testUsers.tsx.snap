@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders with error 1`] = `
+exports[`Users renders with error 1`] = `
 <Fragment>
   <ErrorMessage
     errorMessage="Unable to retrieve user data"
@@ -8,7 +8,7 @@ exports[`renders with error 1`] = `
 </Fragment>
 `;
 
-exports[`renders with loading 1`] = `
+exports[`Users renders with loading 1`] = `
 <Fragment>
   <Carousel>
     <UserCardLoading />
@@ -18,7 +18,7 @@ exports[`renders with loading 1`] = `
 </Fragment>
 `;
 
-exports[`renders with users 1`] = `
+exports[`Users renders with users 1`] = `
 <Fragment>
   <Carousel
     onPositionChanged={[Function]}

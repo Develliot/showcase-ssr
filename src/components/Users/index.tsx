@@ -1,7 +1,7 @@
-import React, { FunctionComponent, useContext } from 'react';
+import React, { FunctionComponent } from 'react';
 
 import { colors as themeColors } from 'src/theme';
-import { UserContext } from 'src/contexts/UserContext';
+import { useUserContext } from 'src/contexts/UserContext';
 
 import { UserCard } from 'src/components/UserCard';
 import { UserCardLoading } from 'src/components/UserCard/UserCardLoading';
@@ -31,11 +31,11 @@ export const Users: FunctionComponent<Props> = ({
     isLoading,
     users,
 }) => {
-    const [state, dispatch] = useContext(UserContext);
+    const [state, setState] = useUserContext();
 
     const setCurrentPosition = (position: number): void => {
         if (position !== state.selectedPosition) {
-            dispatch({ ...state, selectedPosition: position });
+            setState({ ...state, selectedPosition: position });
         }
     };
 

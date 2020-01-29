@@ -1,6 +1,7 @@
 import React, {
     FunctionComponent,
     useState,
+    useContext,
     Dispatch,
     SetStateAction,
 } from 'react';
@@ -26,10 +27,16 @@ export const UserContext = React.createContext<UserContextProviderType>([
     () => {},
 ]);
 
-// making a provider HOC here so I can keep all the state code in this
-// and not where ever this provider is used
+// Using custom hook on components instead of the built-in use context,
+// 1) it's neater
+// 2) I can mock out this custom implementation here testing components that use this context
+export const useUserContext = () => useContext(UserContext);
+
 export const UserProvider: FunctionComponent = ({ children }) => {
-    const [state, setState] = useState({ ...defaultState });
+    const [state, setState] = useState({
+        ...defaultState,
+    });
+
     return (
         <UserContext.Provider value={[state, setState]}>
             {children}

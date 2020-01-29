@@ -1,6 +1,8 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { NextPage } from 'next';
 import fetch from 'isomorphic-unfetch';
+
+import { useUserContext } from 'src/contexts/UserContext';
 
 import { H1, H2, H3, Paragraph } from 'src/components/Typography';
 import { PageWrapper, PageContent } from 'src/components/Layout';
@@ -10,7 +12,6 @@ import {
     ColorBlock,
 } from 'src/components/Layout';
 import Users from 'src/components/Users';
-import { UserContext } from 'src/contexts/UserContext';
 import Map from 'src/components/Map';
 import {
     scaleLatitudeGlobalToUK,
@@ -60,10 +61,13 @@ const transformCoords = (users: UserType[]): UserType[] => {
 };
 
 export const UsingAPIs: NextPage<Props> = ({ isError, isLoading, users }) => {
-    const [state, dispatch] = useContext(UserContext);
+    const [state, dispatch] = useUserContext();
 
+    // we can't use hooks in getInitialProps
+    // that is outside the component where hooks don't work
+    // so we will set up the context with hooks here
     useEffect(() => {
-        // only get mock user data if there is no exiting user data
+        // only get user data if there is no exiting user data
         if (!state.users) {
             dispatch({ ...state, users });
         }
