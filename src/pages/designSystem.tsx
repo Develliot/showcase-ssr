@@ -16,6 +16,7 @@ import { UserCard } from 'src/components/UserCard';
 import { UserCardLoading } from 'src/components/UserCard/UserCardLoading';
 import { Carousel } from 'src/components/Carousel';
 import { ErrorMessage } from 'src/components/ErrorMessage';
+import Head from 'src/components/Head';
 
 import {
     TilesWrapper,
@@ -54,6 +55,10 @@ const mockUser = {
 export const DesignSystem = () => {
     return (
         <PageWrapper>
+            <Head
+                title='SSR Showcase design system '
+                description='A list of all values and components used to build this site'
+            />
             <PageContent>
                 <ColorBlock>
                     <VerticalSpacer size='extraExtraLarge' />

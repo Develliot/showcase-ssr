@@ -9,10 +9,15 @@ import {
     ColorBlock,
 } from 'src/components/Layout';
 import { RobotAnimation } from 'src/components/RobotAnimation';
+import Head from 'src/components/Head';
 
 export const Home = () => {
     return (
         <PageWrapper>
+            <Head
+                title='SSR Showcase'
+                description='Home page for my SSR showcase'
+            />
             <PageContent>
                 <ColorBlock>
                     <ContentWrapper>

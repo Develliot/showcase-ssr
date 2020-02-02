@@ -13,6 +13,8 @@ import {
 } from 'src/components/Layout';
 import Users from 'src/components/Users';
 import Map from 'src/components/Map';
+import Head from 'src/components/Head';
+
 import {
     scaleLatitudeGlobalToUK,
     scaleLongitudeGlobalToUK,
@@ -75,6 +77,10 @@ export const UsingAPIs: NextPage<Props> = ({ isError, isLoading, users }) => {
 
     return (
         <PageWrapper>
+            <Head
+                title='SSR Showcase using APIs'
+                description='A demonstrations using the random use and google maps API'
+            />
             <PageContent>
                 <ColorBlock color='blue'>
                     <ContentWrapper>
